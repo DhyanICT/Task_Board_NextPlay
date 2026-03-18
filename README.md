@@ -20,31 +20,11 @@ A polished Kanban-style task board built with Next.js, TypeScript, Tailwind CSS,
 - Supabase
 - @hello-pangea/dnd
 
-## Local setup
+## Features
+- Guest session (anonymous auth)
+- Drag-and-drop Kanban board
+- Task persistence with RLS
+- Clean UI and filtering
 
-1. Create a new Supabase project.
-2. In Supabase Auth, enable Anonymous sign-ins.
-3. Run the SQL in `supabase/schema.sql` inside the SQL editor.
-4. Copy `.env.example` to `.env.local` and add your Supabase values.
-5. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-6. Start the dev server:
-
-   ```bash
-   npm run dev
-   ```
-
-7. Open `http://localhost:3000`.
-
-## Deploy to Vercel
-
-1. Push this project to GitHub.
-2. Import the GitHub repo into Vercel.
-3. Add the same two environment variables in Vercel:
-   - `NEXT_PUBLIC_SUPABASE_URL`
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-4. Deploy.
+## Live Demo
+https://taskboard-gamma-ten.vercel.app/
